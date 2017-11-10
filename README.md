@@ -1,5 +1,6 @@
 # evmis-android
-This simple android project developed for a system to Landlord/Tenant to Renting house.
+Evmis is an cloud service about renting house. this part of project developed for android users. who is a Landlord/Tenant. 
+Evmis in Turkish means is "our-house".
 
 ----------
 in this project we uses multiple framework for multiple porpuse in example dagger for DI, retrofit for REST service and so on...
