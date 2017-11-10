@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="16dp"
+
+                >
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+
+                        android:background="@drawable/ic_place_black_24dp">
+
+                    </android.support.v7.widget.AppCompatImageView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/house_for_rent_spinner_city"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="1"
+                            android:gravity="bottom|right"
+                            android:prompt="@string/spinner_title"
+                            android:spinnerMode="dropdown" />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+
+                                android:layout_above="@+id/house_for_rent_spinner_province"
+                                android:layout_alignLeft="@+id/house_for_rent_spinner_province"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/dialog_filter_location"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/house_for_rent_spinner_province"
+                                style="@android:style/Widget.Holo.Light.Spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="56dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_alignParentStart="false"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="bottom|right"
+                                android:gravity="bottom|right"
+                                android:paddingBottom="0dp"
+                                android:prompt="@string/spinner_title"
+                                android:spinnerMode="dropdown" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_bookmark_black_18dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_advertise"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/house_for_rent_spinner_rentadvertisetype"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="1"
+                            android:gravity="bottom|right"
+                            android:prompt="@string/spinner_title"
+                            android:spinnerMode="dropdown" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_location_city_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_housetype"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/house_for_rent_spinner_housetype"
+                            style="@style/mySpinnerItemStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="1"
+                            android:gravity="bottom|right"
+                            android:prompt="@string/spinner_title"
+                            android:spinnerMode="dropdown" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_timelapse_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_timeUnit"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/house_for_rent_spinner_rentType"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="1"
+                            android:gravity="bottom|right"
+                            android:prompt="@string/spinner_title"
+                            android:spinnerMode="dropdown" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_mode_edit_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_rentType"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/house_for_rent_spinner_timeUnit"
+                            style="@android:style/Widget.Holo.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_weight="1"
+                            android:gravity="bottom|right"
+                            android:prompt="@string/spinner_title"
+                            android:spinnerMode="dropdown" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_monetization_on_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_price"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/tv_right_range_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/tv_left_range_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <com.appyvet.rangebar.RangeBar
+                            android:id="@+id/range_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+                            android:layout_weight="1"
+                            rsb:connectingLineColor="@color/colorAccent"
+                            rsb:pinColor="#00ffffff"
+                            rsb:rangeBar="true"
+                            rsb:rangeBarColor="@color/colorAccent"
+                            rsb:selectorColor="@color/colorAccent"
+                            rsb:temporaryPins="true"
+                            rsb:textColor="#00ffffff"
+                            rsb:tickColor="#00ffffff"
+                            rsb:tickEnd="37"
+                            rsb:tickInterval="1"
+                            rsb:tickStart="0" />
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_local_dining_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_room"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <com.appyvet.rangebar.RangeBar
+                            android:id="@+id/range_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+
+                            android:layout_weight="1"
+                            rsb:connectingLineColor="@color/colorAccent"
+                            rsb:pinColor="@color/colorAccent"
+                            rsb:rangeBarColor="@color/colorAccent"
+                            rsb:selectorColor="@color/colorAccent"
+                            rsb:tickColor="@color/colorAccent"
+                            rsb:tickEnd="10"
+                            rsb:tickInterval="1"
+                            rsb:tickStart="0" />
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow>
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/ic_history_black_24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="0"
+                            android:text="@string/dialog_filter_date"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <com.appyvet.rangebar.RangeBar
+                            android:id="@+id/range_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="72dp"
+
+                            android:layout_weight="1"
+                            rsb:connectingLineColor="@color/colorAccent"
+                            rsb:pinColor="@color/colorAccent"
+                            rsb:rangeBarColor="@color/colorAccent"
+                            rsb:selectorColor="@color/colorAccent"
+                            rsb:tickColor="@color/colorAccent"
+                            rsb:tickEnd="100"
+                            rsb:tickInterval="1"
+                            rsb:tickStart="1" />
+                    </RelativeLayout>
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_dark" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="right"
+
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/action_cancel_search_rent"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+
+            android:text="@string/action_cancel" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/action_ok_search_rent"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/action_ok" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

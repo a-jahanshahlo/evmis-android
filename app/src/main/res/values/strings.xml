@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">Evmis</string>
+
+
+    <string name="pref_access_token" translatable="false">pref_access_token</string>
+    <string name="pref_token_tpe" translatable="false">pref_token_type</string>
+    <string name="pref_expire_in" translatable="false">pref_expire_in</string>
+    <string name="pref_refresh_token" translatable="false">pref_refresh_token</string>
+    <string name="pref_app_id" translatable="false">pref_app_id</string>
+    <string name="pref_user_id" translatable="false">pref_user_id</string>
+    <string name="pref_user_email" translatable="false">pref_user_email</string>
+    <string name="pref_user_name" translatable="false">pref_user_name</string>
+    <string name="pref_user_image_url">pref_user_image_url</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string name="phone_number_register">تلفن همراه</string>
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_mobile_number">همراه</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settingssssss</string>
+    <string-array name="pref_get_photo">
+        <item>دوربین</item>
+        <item>گالری</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="search_main">جستجو</string>
+    <string name="filter_main">فیلتر</string>
+    <string name="House_Salse"> عرضه</string>
+    <string name="House_Rent">تقاضا</string>
+    <string name="service">خدمات</string>
+    <string name="consultant">مشاوره</string>
+    <string name="spinner_title">Select Category</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!--Filter House For Rent-->
+    <string name="dialog_filter_location">موقعیت</string>
+    <string name="dialog_filter_advertise">نوع آگهی</string>
+    <string name="dialog_filter_housetype">نوع خانه</string>
+    <string name="dialog_filter_address"> آدرس </string>
+    <string name="dialog_filter_nice_name"> نام جهت نمایش </string>
+    <string name="dialog_filter_description"> توضیحات </string>
+
+    <string name="dialog_filter_phone"> شماره تماس </string>
+    <string name="dialog_filter_rentType">نوع معامله</string>
+    <string name="dialog_filter_timeUnit">پرداخت</string>
+    <string name="dialog_filter_room">تعداد اتاق
+    </string>
+    <string name="dialog_filter_price">قیمت
+    </string>
+    <string name="dialog_filter_date">
+    عمر بنا (سال)
+    </string>
+
+
+    <!--House for rent item-->
+    <string name="hfr_sq">
+        متر مربع
+    </string>
+<string name="hfr_price_unit">
+    تومان
+</string>
+    <string name="location_info">اطلاعات خانه</string>
+    <string name="map">نقشه</string>
+    <string name="pictures">تصاوير</string>
+    <string name="house_contact_info">اطلاعات تماس</string>
+    <string name="other_facilities">ساير امکانات</string>
+    <string name="year">سال</string>
+    <string name="dialog_filter_house_geo_view">موقعیت جغرافیایی </string>
+    <string name="dialog_filter_house_view">نمای ساختمان </string>
+    <string name="dialog_filter_cabinet">نوع کابینت </string>
+    <string name="dialog_filter_floor_covering"> کفپوش</string>
+    <string name="dialog_filter_proof_ownership">نوع سند </string>
+    <string name="dialog_filter_living_state">وضعیت سکونت </string>
+    <string name="dialog_filter_floor"> طبقه </string>
+
+
+    <!--FAB Menu-->
+    <string name="fab_salse">
+تقاضای ملک
+    </string>
+    <string name="fab_rent">
+        ارائه ملک
+    </string>
+    <string name="garbage">سیستم شوتینگ</string>
+    <string name="balcony">بالکن</string>
+    <string name="parking"> پارکینگ </string>
+    <string name="elevator">آسانسور</string>
+    <string name="pool">استخر</string>
+    <string name="jacuzzi"> جکوزی </string>
+    <string name="wareHouse">انباری</string>
+    <string name="electricite">برق</string>
+    <string name="water">آب</string>
+    <string name="gas">گاز</string>
+    <string name="sauna">سونا</string>
+    <string name="hasKitchen">آشپزخانه</string>
+    <string name="hasFloorCovering">پارکت</string>
+    <string name="radiator"> رادیاتور</string>
+    <string name="chiler">چیلر </string>
+    <string name="splite">اسپلیت </string>
+    <string name="doctSplite"> داک اسپلیت</string>
+    <string name="heatOnFloor">گرما از زمین </string>
+    <string name="shomine">شومینه </string>
+    <string name="_package">پکیج </string>
+    <string name="cooler">کولر </string>
+    <string name="heater">بخاریی </string>
+    <string name="fanCuel">فن کوئل </string>
+    <string name="yard">حیاط </string>
+    <string name="open"> اوپن</string>
+    <string name="farangiToalet"> توالت فرنگی</string>
+    <string name="lobbby"> لابی</string>
+    <string name="remoteDoor">درب ریموت </string>
+    <string name="roofGarden"> روف گاردن </string>
+    <string name="centralVacuumCleaner"> جارو برقی مرکزی</string>
+    <string name="centralAnnten">آنتن مرکزی </string>
+    <string name="barbecue">باربکیو </string>
+    <string name="secureityCamera"> دوربین مداربسته</string>
+    <string name="smartSystem"> سیستم هوشمند</string>
+    <string name="fitnessSlon"> سالن بدنسازی</string>
+    <string name="jonitor">سرایدار </string>
+    <string name="foundation">زیربنا </string>
+    <string name="height"> ارتفاع مغازه</string>
+    <string name="isPenthouse"> پنت هاس</string>
+    <string name="isOffice">موقعیت اداری </string>
+    <string name="dastor"> دستور</string>
+    <string name="presales"> پیش فروش</string>
+    <string name="collaborative">مشارکتی </string>
+    <string name="ownerPercent"> درصد مالک</string>
+    <string name="eslahi">اصلاحی </string>
+    <string name="arzeGozar"> عرض گذر</string>
+    <string name="toulBar">طول بر </string>
+    <string name="numberUnitOnFloor">تعداد واحد در طبقه </string>
+    <string name="numberOfFloors">تعداد طبقات </string>
+
+
+    <!--Number to words-->
+    <string name="million_in_fa">
+        میلیون
+    </string>
+    <string name="billion_in_fa">
+        میلیارد
+    </string>
+
+    <!--String related to search-->
+    <string name="action_ok">تائید</string>
+    <string name="action_cancel">انصراف</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_view">آیتمی موجود نیست</string>
+
+
+    <!--Permision-->
+
+    <string name="button_allow">دسترسی</string>
+    <string name="button_deny">لغو دسترسی</string>
+    <string name="permission_camera_denied">دسترسی به دوربین ندارید</string>
+    <string name="permission_camera_never_askagain">مجددا نپرس</string>
+    <string name="permission_camera_rationale">مجوز دسترسی به دوربین را می دهید؟</string>
+
+
+    <string name="permission_location_denied">دسترسی به موقعیت مکانی ندارید</string>
+    <string name="permission_never_askagain">مجددا نپرس</string>
+    <string name="permission_location_rationale">مجوز دسترسی به موقعیت مکانی را می دهید؟</string>
+
+    <string name="permission_coarse_denied"> دسترسی به موقعیت نسبی کاربر ندارید</string>
+    <string name="permission_coarse_rationale"> مجوز دسترسی به موقعیت نسبی خود می دهید؟ </string>
+
+    <string name="grid_view_item_amenitie_id">Id</string>
+
+    <string name="title_activity_house_maps">Map</string>
+    <string name="house_on_map"> موقعیت جغرافیایی مسکن </string>
+
+        <string name="google_maps_key">
+       AIzaSyAKmAFE819fGk0NxerfVVSBtKLzvDak0dI
+    </string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reveal_container_mask"
+    android:background="@color/reveal_background"
+>
+
+
+<io.codetail.widget.RevealFrameLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+android:layout_gravity="bottom"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activator_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+
+        android:visibility="invisible"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:elevation="2dp" />
+
+    <LinearLayout
+        android:id="@+id/cardsLine"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+
+        android:visibility="invisible">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/material_gap_large"
+            android:layout_marginRight="@dimen/material_gap_large"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+            <android.support.v7.widget.AppCompatImageButton
+android:id="@+id/reveal_gallery"
+                android:background="@drawable/button_circle"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_gallerry"
+                android:scaleType="fitXY"
+              />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/activator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/material_gap_large"
+            android:layout_marginRight="@dimen/material_gap_large"
+
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+            <android.support.v7.widget.AppCompatImageButton
+android:id="@+id/reveal_camera"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+android:background="@drawable/button_circle_trans"
+                android:src="@drawable/ic_color_camera"
+                android:scaleType="fitXY"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</io.codetail.widget.RevealFrameLayout>
+</FrameLayout>

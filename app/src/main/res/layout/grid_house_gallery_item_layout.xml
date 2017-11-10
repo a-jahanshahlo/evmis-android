@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/border_gallery_item"
+
+    android:padding="5dp">
+    <!--android:background="@drawable/grid_color_selector"-->
+    <ImageView
+        android:id="@+id/image_new_house_gallery_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/imageButton_new_house_gallery_item"
+        style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_delete_white_24dp" />
+
+
+</RelativeLayout>

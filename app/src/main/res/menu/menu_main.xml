@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+<item
+    android:id="@+id/ic_search"
+    android:orderInCategory="100"
+    android:title="Delete"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_search_black_24dp"
+
+    />
+    <item
+        android:id="@+id/ic_filter_list"
+        android:orderInCategory="100"
+        android:title="Setting"
+        app:showAsAction="always"
+        android:onClick="onFilterClick"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        />
+    <item
+        android:id="@+id/d3"
+        android:orderInCategory="100"
+        android:title="Setting2"
+        app:showAsAction="never"
+        />
+</menu>
